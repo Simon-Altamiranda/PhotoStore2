@@ -28,7 +28,7 @@ $ bundle install
 You also have to set up all environment variables and config your database settings, you can do it creating the following files (we have created sample files inside config folder as an example):
 
 ```
-youconnect/
+PhotoStore2/
 └── config/
     └── database.yml   -> Database credentials
 ```
