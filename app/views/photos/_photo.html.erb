@@ -9,7 +9,7 @@
           <i class="mdi-navigation-more-vert right"></i>
         </span>
         <p>
-          <%= link_to "View More", "#" %>
+          <%= link_to "View More", photo %>
         </p>
       </div>
       <div class="card-reveal">
@@ -20,6 +20,11 @@
 
         <p>
           <%= photo.description %>
+        </p>
+
+        <p>
+          <%= link_to "Favorite", "#", class: "waves-effect waves-light btn" %>
+          <%= link_to "Like", "#", class: "waves-effect waves-light btn" %>
         </p>
       </div>
     </div>

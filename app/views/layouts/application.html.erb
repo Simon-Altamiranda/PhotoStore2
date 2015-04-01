@@ -18,6 +18,12 @@
       <ul class="right hide-on-med-and-down">
         <% if user_signed_in? %>
           <li>
+            <%= link_to "Likes", "#" %>
+          </li>
+          <li>
+            <%= link_to "Favorites", "#" %>
+          </li>
+          <li>
             <%= link_to "Sign out", destroy_user_session_path,
                   method: :delete %>
           </li>
@@ -42,8 +48,9 @@
     </div>
   </nav>
 
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  <% if notice || alert %>
+    <%= render "shared/message", message: (notice || alert) %>
+  <% end %>
 
   <%= yield %>
 

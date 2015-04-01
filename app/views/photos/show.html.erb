@@ -1,0 +1,63 @@
+<div class="container">
+  <h3><%= @photo.title %></h3>
+
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="asset">
+        <%= image_tag @photo.asset.url(:detail) %>
+      </div>
+    </div>
+
+    <div class="col s12 m6">
+      <p class="description">
+        <%= @photo.description %>
+      </p>
+    </div>
+  </div>
+
+  <div class="comments">
+    <h3>Comments</h3>
+
+    <ul class="collection">
+      <li class="collection-item avatar">
+        <i class="mdi-communication-comment circle"></i>
+        <span class="title">email@accou.nt</span>
+        <p>
+          Non nam libero saepe eos. Dolores labore delectus consequatur voluptas ipsam sequi. Voluptas sit velit doloremque. Iure voluptatem quas nobis.
+        </p>
+      </li>
+
+      <li class="collection-item avatar">
+        <i class="mdi-communication-comment circle"></i>
+        <span class="title">email@accou.nt</span>
+        <p>
+          Non nam libero saepe eos. Dolores labore delectus consequatur voluptas ipsam sequi. Voluptas sit velit doloremque. Iure voluptatem quas nobis.
+        </p>
+      </li>
+
+      <li class="collection-item avatar">
+        <i class="mdi-communication-comment circle"></i>
+        <span class="title">email@accou.nt</span>
+        <p>
+          Non nam libero saepe eos. Dolores labore delectus consequatur voluptas ipsam sequi. Voluptas sit velit doloremque. Iure voluptatem quas nobis.
+        </p>
+      </li>
+    </ul>
+
+    <% if user_signed_in? %>
+      <form>
+          <div class="input-field col s6">
+            <i class="mdi-editor-mode-edit prefix"></i>
+            <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+            <label for="icon_prefix2">Comment</label>
+          </div>
+
+          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="mdi-content-send right"></i>
+          </button>
+
+      </form>
+    <% end %>
+  </div>
+
+</div>

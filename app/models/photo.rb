@@ -1,7 +1,7 @@
 class Photo < ActiveRecord::Base
   belongs_to :user
 
-  has_attached_file :asset, styles: { thumb: "100x100#" }
+  has_attached_file :asset, styles: { detail: "420x", thumb: "100x100#" }
 
   validates :user, :title, :description, presence: true
   validates :permalink, presence: true, url: true
