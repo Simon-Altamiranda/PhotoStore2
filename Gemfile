@@ -12,6 +12,10 @@ gem 'rails',            '4.2.0'
 gem 'devise'
 
 
+# Plugins
+gem 'paperclip'
+gem 'validate_url'
+
 # Frontend
 gem 'sass-rails',       '~> 5.0'
 gem 'uglifier',         '>= 1.3.0'

@@ -11,6 +11,7 @@
    <nav>
     <div class="nav-wrapper">
       <%= link_to image_tag('logo.png'), root_path, class: 'brand-logo' %>
+
       <a href="#" data-activates="mobile-demo" class="button-collapse">
         <i class="mdi-navigation-menu"></i>
       </a>
@@ -45,6 +46,12 @@
   <p class="alert"><%= alert %></p>
 
   <%= yield %>
+
+  <footer class="page-footer">
+    <div class="footer-copyright">
+      © 2014 Copyright Text
+    </div>
+  </footer>
 
 </body>
 </html>
