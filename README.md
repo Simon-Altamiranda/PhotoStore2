@@ -25,7 +25,7 @@ And then go to your project folder and run:
 $ bundle install
 ```
 
-You also have to set up all environment variables and config your database settings, you can do it creating the following files (we have created sample files inside config folder as an example):
+You also have to set up all environment variables and config your database settings, you can do it creating the following files (we have created a sample file inside the config folder so that you can use as a guide):
 
 ```
 PhotoStore2/
