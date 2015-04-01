@@ -15,16 +15,28 @@
         <i class="mdi-navigation-menu"></i>
       </a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="components.html">Components</a></li>
-        <li><a href="javascript.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        <% if user_signed_in? %>
+          <li>
+            <%= link_to "Sign out", destroy_user_session_path,
+                  method: :delete %>
+          </li>
+        <% else %>
+          <li>
+            <%= link_to "Sign up", new_user_registration_path %>
+          </li>
+        <% end %>
       </ul>
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="components.html">Components</a></li>
-        <li><a href="javascript.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        <% if user_signed_in? %>
+          <li>
+            <%= link_to "Sign out", destroy_user_session_path,
+                  method: :delete %>
+          </li>
+        <% else %>
+          <li>
+            <%= link_to "Sign up", new_user_registration_path %>
+          </li>
+        <% end %>
       </ul>
     </div>
   </nav>
